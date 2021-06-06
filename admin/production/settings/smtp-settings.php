@@ -53,6 +53,7 @@ include '../../controllers/settings/generalSetConnect.php';
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">SMTP HOST <span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="hidden" name="token" value="<?= $_SESSION['token']?>">
                                                     <input type="text" value="<?= $connect['set_smtp_host']?>" name="set_smtp_host" required="required" class="form-control col-md-7 col-xs-12">
                                                 </div>
                                             </div>

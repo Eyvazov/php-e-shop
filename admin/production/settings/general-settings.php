@@ -55,6 +55,7 @@ include '../../controllers/settings/generalSetConnect.php';
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Sayt URL-i <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="hidden" name="token" value="<?= $_SESSION['token']?>">
                                         <input type="text" name="set_title" readonly value="<?= $connect['set_site_name']?>" required="required" class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
